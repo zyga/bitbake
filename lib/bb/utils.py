@@ -253,7 +253,7 @@ def explode_dep_versions(s):
     """
     Take an RDEPENDS style string of format:
     "DEPEND1 (optional version) DEPEND2 (optional version) ..."
-    skip null value and items appeared in dependancy string multiple times
+    skip null value and items appeared in dependency string multiple times
     and return a dictionary of dependencies and versions.
     """
     r = explode_dep_versions2(s)

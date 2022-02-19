@@ -113,7 +113,7 @@ class MissingParameterError(BBFetchException):
         self.args = (missing, url)
 
 class ParameterError(BBFetchException):
-    """Exception raised when a url cannot be proccessed due to invalid parameters."""
+    """Exception raised when a url cannot be processed due to invalid parameters."""
     def __init__(self, message, url):
         msg = "URL: '%s' has invalid parameters. %s" % (url, message)
         self.url = url

@@ -764,7 +764,7 @@ class LogHandler(logging.Handler):
 class MetadataEvent(Event):
     """
     Generic event that target for OE-Core classes
-    to report information during asynchrous execution
+    to report information during asynchronous execution
     """
     def __init__(self, eventtype, eventdata):
         Event.__init__(self)

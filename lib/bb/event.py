@@ -40,7 +40,7 @@ class HeartbeatEvent(Event):
     """Triggered at regular time intervals of 10 seconds. Other events can fire much more often
        (runQueueTaskStarted when there are many short tasks) or not at all for long periods
        of time (again runQueueTaskStarted, when there is just one long-running task), so this
-       event is more suitable for doing some task-independent work occassionally."""
+       event is more suitable for doing some task-independent work occasionally."""
     def __init__(self, time):
         Event.__init__(self)
         self.time = time

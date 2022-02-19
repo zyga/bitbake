@@ -607,7 +607,7 @@ class BBCooker:
             data.emit_env(env, envdata, True)
             logger.plain(env.getvalue())
 
-        # emit the metadata which isnt valid shell
+        # emit the metadata which isn't valid shell
         for e in sorted(envdata.keys()):
             if envdata.getVarFlag(e, 'func', False) and envdata.getVarFlag(e, 'python', False):
                 logger.plain("\npython %s () {\n%s}\n", e, envdata.getVar(e, False))

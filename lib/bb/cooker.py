@@ -1763,7 +1763,7 @@ class CookerCollectFiles(object):
     def __init__(self, priorities, mc=''):
         self.mc = mc
         self.bbappends = []
-        # Priorities is a list of tupples, with the second element as the pattern.
+        # Priorities is a list of tuples, with the second element as the pattern.
         # We need to sort the list with the longest pattern first, and so on to
         # the shortest.  This allows nested layers to be properly evaluated.
         self.bbfile_config_priorities = sorted(priorities, key=lambda tup: tup[1], reverse=True)
